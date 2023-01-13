@@ -5,9 +5,8 @@ function square (x) {
         let n = '';
 
         for (let j = 0; j < x; j++) {
-            n = n + '';
+            n = n + '*';
         }
-
         console.log(n)
     }
 }
@@ -19,18 +18,13 @@ function pyramid (x) {
     for (let i = 0; i < x; i++) {
         let n = '';
 
-        for (let j = 0; j < x - i - 1; j++) {
-            n = n + '';
+        for (let j = 0; j <= i; j++) {
+            n = n + '#';
         }
-
-        for (let j = 0; j<= i; j++) {
-            n = n + '#'
-        }
-
         console.log(n)
     }
 }
-pyramid(2);
+pyramid(3);
 
 //2 Create a function that removes the first element of the array below and adds “kiwi” to the end of the array
 
@@ -58,17 +52,13 @@ function assignGrade(number) {
 
     if (score >= 90) {
         console.log('A');
-    }
-    if (score >= 80 && score < 90) {
+    } else if (score >= 80 && score < 90) {
         console.log('B');
-    }
-    if (score >= 70 && score < 80) {
+    } else if (score >= 70 && score < 80) {
         console.log('C');
-    }
-    if (score >= 60 && score < 70) {
+    } else if (score >= 60 && score < 70) {
         console.log('D');
-    }
-    if (score < 60) {
+    } else if (score < 60) {
         console.log('F');
 }
     return score;
